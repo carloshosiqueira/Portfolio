@@ -20,6 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: right;
+    border-bottom: 2px inset black;
 }
 
 main{
@@ -36,58 +37,62 @@ main{
     color:gray;
     font-weight:bold;
     font-size:24px;
+    padding:10px;
 }
 
 .aboutMe{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     margin-top:50px;
+    border:1px solid yellow
 }
 
 .infos{
-    width: 60%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 40%;
+    height: 200px;
     border:1px solid green;
-    padding:50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
 }
 
-.personalinfo,.proinfo{
-    height: 40%;
-    background: red;
+.infos p{
+    font-size: 24px;
+    color:white;
+    filter:drop-shadow(3px 3px 2px)
 }
 
 .picture{
-    width: 30%;
-    height: 500px;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
     border:1px solid black;
-    padding:50px;
+    background-image: url(img/profilepic.png);
+    background-size:cover;
+}
+
+.traco{
+    height: 150px;
+    width: 5px;
+    background-color: purple;
 }
 
 .projects{
     margin-top: 50px;
 }
 
-.contact{
-    margin-top:50px;
-}
-
-.contact img{
-    width: 10%;
-}
-
 .showProjects{
-    display: grid;
-    grid-template-columns: repeat(2, 45%);
-    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    row-gap: 20px;
+    justify-content: center;
+    
 }
 
 .showProjects img{
-    width: 90%;
+    width: 100%;
 }
 
 .project1,.project2,.project3,.project4{
@@ -95,6 +100,38 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 40%;
+    border:1px solid black;
+    margin:10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+
+.contact img{
+    width: 10%;
+}
+
+.socials{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border:1px solid black
+}
+
+.socials img{
+    width: 100px;
+    height: 100px;
+}
+
+.twitter,.instagram,.linkedin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
