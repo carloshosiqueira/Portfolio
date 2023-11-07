@@ -7,11 +7,12 @@
 body{
     height: auto;
     width: auto;
-    background: #ccc;
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color:white;
 }
 
 header{
@@ -25,6 +26,8 @@ header{
 
 main{
     width: 95%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -34,7 +37,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color:gray;
     font-weight:bold;
     font-size:24px;
     padding:10px;
@@ -60,7 +62,6 @@ main{
 
 .infos p{
     font-size: 24px;
-    color:white;
     filter:drop-shadow(3px 3px 2px)
 }
 
@@ -68,13 +69,13 @@ main{
     width: 200px;
     height: 200px;
     border-radius: 200px;
-    border:1px solid black;
     background-image: url(img/profilepic.png);
     background-size:cover;
+    box-shadow: 8px 1px 5px purple;
 }
 
 .traco{
-    height: 150px;
+    height: 170px;
     width: 5px;
     background-color: purple;
 }
@@ -83,50 +84,70 @@ main{
     margin-top: 50px;
 }
 
+.links{
+    font-size:24px;
+    background: rgba(128,128,128,0.2);
+    border-radius:20px;
+    padding:20px;
+    margin:20px 0 20px 0;
+}
+
 .showProjects{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column; 
     justify-content: center;
     
 }
 
 .showProjects img{
-    width: 100%;
+    width: 30%;
 }
 
 .project1,.project2,.project3,.project4{
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 40%;
-    border:1px solid black;
-    margin:10px;
+    width: 100%;
+    margin:10px 0 10px 0;
+}
+
+.showProjects span{
+    width: 60%;
+    margin:0 0 0 50px;
+    font-size:20px
 }
 
 .contact{
+    width:40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top:50px;
+    border:1px inset purple;
+    margin:20px 0 50px 0;
 }
 
-.contact img{
-    width: 10%;
+.contact .email{
+    width: 90%;
+    font-size: 30px;
+    background: rgba(128,128,128,0.2);
+    border-radius:20px;
+    padding:20px;
+    margin:20px 0 20px 0;
 }
 
 .socials{
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border:1px solid black
-}
+    padding:10px;
+    }
 
 .socials img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 .twitter,.instagram,.linkedin{
@@ -134,4 +155,14 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
+}
+
+.socials p{
+    margin-bottom:10px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
 }
