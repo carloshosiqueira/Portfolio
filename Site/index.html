@@ -10,46 +10,58 @@
 
 <body>
     <header>
-        <div class="menus">
-            <span>About Me</span>
-            <span>Projects</span>
-            <span>Contact</span>
+        <div class="menus" id="menus">
+            <a href="#aboutme"><span>About Me</span></a>
+            <a href="#projects"><span>Projects</span></a>
+            <a href="#contact"><span>Contact</span></a>
         </div>
     </header>
     <main>
-        <div class=aboutMe>
+        <div class="welcome">
+            <h2>Hello, I'm Carlos Henrique.<br>Welcome to my portfolio</h2>
+        </div>
+        <hr>
+        <div class=aboutMe id="aboutme">
+            <h2 style="margin: 30px 0 30px 0;">About Me</h2>
+            <div class="itens">
+                <div class="picture"></div>
                 <div class="infos">
-                    <p>Hello, my name is Carlos Henrique, I'm 18 years old
-                        and I'm currently learning C, HTML, CSS and JavaScript</p>
+                    <p>I'm 18 years old, currently studying at SENAI to become a full stack developer, started learning
+                        at the second half of 2023</p>
                 </div>
-            <div class="picture"></div>
-            <div class="traco"></div>
+            </div>
         </div>
-        <div class="projects">
+        <hr>
+        <div class="projects" id="projects">
             <h1>Projects</h1>
-            <div class="links">
-                <p>See my public projects and my google awards</p>
-                <p>Github: <a href="https://github.com/carloshosiqueira">https://github.com/carloshosiqueira</a></p>
-                <p>Google Cloud: <a
-                        href="https://www.cloudskillsboost.google/public_profiles/dfd0796e-2527-48f1-bd69-4ab5c93202a8">https://www.cloudskillsboost.google/public_profiles/dfd0796e-2527-48f1-bd69-4ab5c93202a8</a>
-                </p>
+        </div>
+        <div class="showProjects">
+            <div class="project1">
+                <img src="img/projeto1.png">
+                <span>My first website, made in the start of my studies when I was learning how to use JavaScript to
+                    check the credencials</span>
             </div>
-            <div class="showProjects">
-                <div class="project1">
-                    <img src="img/projeto1.png">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequuntur et magni asperiores incidunt necessitatibus deserunt ad. Aperiam nulla iste ab tempore? Accusantium repellendus, hic minima magnam at fugit minus.</span>
-                </div>
-                <div class="project1">
-                    <img src="img/projeto2.png">
-                </div>
+            <div class="project2">
+                <img src="img/projeto2.png">
+                <span>This website was also made from a class challenge, the challenge was to make a news website with
+                    the design previously made by our teacher.</span>
             </div>
         </div>
-        <div class="contact">
+        </div>
+        <hr>
+        <div class="contact" id="contact">
             <h1>Contact Me</h1>
-            <div class="email">
-                <p>Email: carlos.o.siqueira156@gmail.com</p>
-                <p>Phone: (19) 982770722</p>
-            </div>
+                <form>
+                    <div class="informacao">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Email Adress">
+                    </div>
+                    <div class="informacao">
+                        <input type="text" placeholder="Mobile Number">
+                        <input type="text" placeholder="Email Subject">
+                    </div>
+                    <textarea placeholder="Message" required></textarea>
+                </form>
             <div class="socials">
                 <div class="twitter">
                     <a href=""><img src="./img/logoTwitter.png"></a>
@@ -62,7 +74,9 @@
                 </div>
             </div>
         </div>
+        <a href="#menus" class="botao"><button class="voltarInicio">Start</button></a>
     </main>
 </body>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
