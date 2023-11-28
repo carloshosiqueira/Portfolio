@@ -46,6 +46,10 @@ hr{
     margin:25px 0 25px 0;
 }
 
+.sanduiche{
+    display: none;
+}
+
 .menus{
     width: 30%;
     display: flex;
@@ -74,6 +78,8 @@ hr{
 }
 
 .aboutMe{
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,6 +115,31 @@ hr{
     align-items: center;
     justify-content: center;
     padding:30px;
+}
+
+.socials{
+    width: 35%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px;
+    }
+
+.socials img{
+    width: 50px;
+    height: 50px;
+}
+
+.twitter,.instagram,.linkedin,.github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials p{
+    margin-bottom:10px;
 }
 
 .projects h1{
@@ -229,34 +260,27 @@ textarea::placeholder, input::placeholder{
     color:white;
 }
 
-.socials{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding:10px;
-    }
-
-.socials img{
-    width: 50px;
-    height: 50px;
+.contact input[type="submit"]{
+    display: block;
 }
 
-.twitter,.instagram,.linkedin{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+.contact input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: rgba(128, 0, 128, 0.5);
 }
 
-.socials p{
-    margin-bottom:10px;
-}
+
 
 a{
     text-decoration: none;
     color:inherit;
+}
+
+.divVoltar{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding:20px;
 }
 
 .voltarInicio{
@@ -264,14 +288,6 @@ a{
     width: 50px;
     border-radius: 50%;
     color: gray;
-}
-
-.botao{
-    width: 100%;
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    padding:20px;
 }
 
 .voltarInicio:hover{
@@ -339,6 +355,10 @@ a{
         width: 60%;
         margin:0 0 0 20px;
     }
+
+    .aboutMe .socials{
+        width: 50%;
+    }
 }
 
 @media(max-width:650px){
@@ -348,8 +368,12 @@ a{
         padding:20px;
         font-size:40px;
     }
+
+    .sanduiche{
+        display: flex;
+    }
     
-    .menus,.botao{
+    .menus,.divVoltar{
         display:none
     }
 
@@ -376,23 +400,21 @@ a{
     }
 }
 
-@media(max-width:500px){
+@media(max-width:550px){
     .welcome h2{
         font-size: 30px;
     }
 
-    .aboutMe .itens{
+    .itens{
         display: flex;
         flex-direction: column;
+    }
+
+    .itens .info{
         width: 100%;
     }
 
-    .aboutMe .infos{
-        width: 100%;
-        margin:0;
-    }
-
-    .aboutMe .itens .infos p{
+    .itens p{
         width: 100%;
     }
 
@@ -416,10 +438,6 @@ a{
     }
 
     .contact div input{
-        width: 100%;
-    }
-
-    .socials{
         width: 100%;
     }
 }

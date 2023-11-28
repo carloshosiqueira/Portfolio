@@ -15,20 +15,36 @@
             <a href="#projects"><span>Projects</span></a>
             <a href="#contact"><span>Contact</span></a>
         </div>
-        <i class="fa-solid fa-bars" id="menus"></i>
+        <div class="sanduiche">
+            <i class="fa-solid fa-bars" id="menus"></i>
+        </div>
     </header>
     <main>
         <div class="welcome">
             <h2>Hello, I'm Carlos Henrique.<br>Welcome to my portfolio</h2>
         </div>
         <hr>
-        <div class=aboutMe id="aboutme">
+        <div class="aboutMe" id="aboutme">
             <h2 style="margin: 30px 0 30px 0;">About Me</h2>
             <div class="itens">
                 <div class="picture"></div>
                 <div class="infos">
                     <p>I'm 18 years old, currently studying at SENAI to become a full stack developer, started learning
                         at the second half of 2023</p>
+                </div>
+            </div>
+            <div class="socials">
+                <div class="twitter">
+                    <a href=""><img src="./img/logoTwitter.png"></a>
+                </div>
+                <div class="instagram">
+                    <a href=""><img src="./img/logoInstagram.png"></a>
+                </div>
+                <div class="linkedin">
+                    <a href=""><img src="./img/logoLinkedin.png" class="imglinkedin"></a>
+                </div>
+                <div class="github">
+                    <a href="a"><img src="./img/logoGithub.png"></a>
                 </div>
             </div>
         </div>
@@ -52,30 +68,22 @@
         <hr>
         <div class="contact" id="contact">
             <h1>Contact Me</h1>
-                <form>
-                    <div class="informacao">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email Adress">
-                    </div>
-                    <div class="informacao">
-                        <input type="text" placeholder="Mobile Number">
-                        <input type="text" placeholder="Email Subject">
-                    </div>
-                    <textarea placeholder="Message" required></textarea>
-                </form>
-            <div class="socials">
-                <div class="twitter">
-                    <a href=""><img src="./img/logoTwitter.png"></a>
+            <form>
+                <div class="informacao">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Adress">
                 </div>
-                <div class="instagram">
-                    <a href=""><img src="./img/logoInstagram.png"></a>
+                <div class="informacao">
+                    <input type="text" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
                 </div>
-                <div class="linkedin">
-                    <a href=""><img src="./img/logoLinkedin.png" class="imglinkedin"></a>
-                </div>
-            </div>
+                <textarea placeholder="Message" required></textarea>
+                <input type="submit" value="Send" class="send">
+            </form>
         </div>
-        <a href="#menus" class="botao"><button class="voltarInicio">Start</button></a>
+        <div class="divVoltar">
+            <a href="#menus"><button class="voltarInicio">Start</button></a>
+        </div>
     </main>
 </body>
 <script src="https://kit.fontawesome.com/1e0e20579c.js" crossorigin="anonymous"></script>
