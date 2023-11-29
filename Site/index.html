@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
@@ -16,12 +16,14 @@
             <a href="#contact"><span>Contact</span></a>
         </div>
         <div class="sanduiche">
-            <i class="fa-solid fa-bars" id="menus"></i>
+            <figure>
+                <img src="./assets/img/Menu.png" alt="Menu sanduiche" id="sanduiche" onclick="clickMenu()">
+            </figure>
         </div>
     </header>
     <main>
         <div class="welcome">
-            <h2>Hello, I'm Carlos Henrique.<br>Welcome to my portfolio</h2>
+            <h2>Hello, I'm Carlos Henrique<br>Welcome to my portfolio</h2>
         </div>
         <hr>
         <div class="aboutMe" id="aboutme">
@@ -35,16 +37,17 @@
             </div>
             <div class="socials">
                 <div class="twitter">
-                    <a href=""><img src="./img/logoTwitter.png"></a>
+                    <a href="https://twitter.com/Carloshosiq"><img src="./assets/img/logoTwitter.png"></a>
                 </div>
                 <div class="instagram">
-                    <a href=""><img src="./img/logoInstagram.png"></a>
+                    <a href="https://www.instagram.com/karlosz156/"><img src="./assets/img/logoInstagram.png"></a>
                 </div>
                 <div class="linkedin">
-                    <a href=""><img src="./img/logoLinkedin.png" class="imglinkedin"></a>
+                    <a href="https://www.linkedin.com/in/carlos-henrique-oliveira-siqueira-786030286/"><img
+                            src="./assets/img/logoLinkedin.png" class="imglinkedin"></a>
                 </div>
                 <div class="github">
-                    <a href="a"><img src="./img/logoGithub.png"></a>
+                    <a href="https://github.com/carloshosiqueira"><img src="./assets/img/logoGithub.png"></a>
                 </div>
             </div>
         </div>
@@ -54,12 +57,13 @@
         </div>
         <div class="showProjects">
             <div class="project1">
-                <img src="img/projeto1.png">
-                <span>My first website, made in the start of my studies when I was learning how to use JavaScript to
+                <img src="./assets/img/projeto1.png">
+                <span>My first website using Javascript, made in the start of my studies when I was learning how to use
+                    JavaScript to
                     check the credencials</span>
             </div>
             <div class="project2">
-                <img src="img/projeto2.png">
+                <img src="./assets/img/projeto2.png">
                 <span>This website was also made from a class challenge, the challenge was to make a news website with
                     the design previously made by our teacher.</span>
             </div>
@@ -67,7 +71,7 @@
         </div>
         <hr>
         <div class="contact" id="contact">
-            <h1>Contact Me</h1>
+            <!-- <h1>Contact Me</h1>
             <form>
                 <div class="informacao">
                     <input type="text" placeholder="Full Name">
@@ -79,6 +83,22 @@
                 </div>
                 <textarea placeholder="Message" required></textarea>
                 <input type="submit" value="Send" class="send">
+            </form> -->
+
+            <form action="https://formspree.io/f/moqookey" method="POST">
+                <div class="tamanho">
+                <label>
+                    Your email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>Email Subject:<input type="text" name="subject" required></label>
+                <label>
+                    Your message:
+                    <textarea name="message" required></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </div>
             </form>
         </div>
         <div class="divVoltar">
@@ -87,6 +107,6 @@
     </main>
 </body>
 <script src="https://kit.fontawesome.com/1e0e20579c.js" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="./assets/script.js"></script>
 
 </html>
